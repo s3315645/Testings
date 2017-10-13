@@ -1,2 +1,2 @@
 # orangepuma
-Created for CPT111 Project
+Project repository. See jenaeheight/practice for the practice repository.
