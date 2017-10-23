@@ -17,7 +17,7 @@ main(){
 	
 	display.displayImage('introIMG.jpg', 'background');
 	display.displayAudio('theme.mp3');
-	display.displayText('',"Click anywhere to begin");
+	display.displayText('','Click anywhere to begin');
 		
 	}
 	
