@@ -11,7 +11,7 @@ main(){
 	
 	//var clues[] = new clue{'notepad'; 'clue2'; 'clue3'; 'clue4'};
 	
-	var currentScene = novel.getScene('office.json');
+	var currentScene = novel.getScene(/*'office key'*/);
 	
 	function intro(){
 	
@@ -39,7 +39,7 @@ main(){
 	intro();
 	do{
 		currentScene = playScene(currentScene);
-	}while(currentScene.getFileName() != 'endScene.json') 
+	}while(currentScene.getFileName() != /*end scene key*/) 
 	
 	
 }
