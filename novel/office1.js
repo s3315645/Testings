@@ -120,8 +120,23 @@ let office1object = {
             "dialogue": "Now, should I head to the Basement or the Park?"
         }
     ],
-    "option_1_title": "Go to Basement",
-    "option_2_title": "Go to Park",
-    "option_1_path": "basement.js",
-    "option_2_path": "park.js"
+    "option_1_clue_required": "ink",
+    "option_2_clue_required": "leaves",
+    "option_1_clue": {
+      "title": "Go to Basement",
+      "path": "basement.js"
+    },
+    // 'No clue' options are n/a in office1 scene, but included here to ensure they're in the template
+    // "option_1_no_clue": {
+    //   "title": "Go to Basement",
+    //   "path": "basement.js"
+    // },
+    "option_2_clue": {
+      "title": "Go to Park",
+      "path": "park.js"
+    },
+    // "option_2_no_clue": {
+    //   "title": "Go to Park",
+    //   "path": "park.js"
+    // }
 }
