@@ -8,7 +8,17 @@ function displayText(speakerName, textContent) {
     this.font = '20px "Deja Vu Sans", Helvetica, Arial, sans-serif';
     this.width = 1.0; // decimal percentage
     this.visibility = "visible";
+    
+    var i = 0;
+    var speed = 60;
+    
+    if (i < txtContent.length) {
+        document.getElementById("getText").innerHTML += txtContent.charAt(i);
+        i++;
+        setTimeout(displayText, speed);
+  }
 }
+
 
 
 function displayImage(imageName, imageSetting) {
@@ -43,6 +53,6 @@ function displayAudio(audioName) {
 
 
 function displayDecision(button1, button2) {
-    this.button1 = buton1;
+    this.button1 = button1;
     this.button2 = button2;
 }
