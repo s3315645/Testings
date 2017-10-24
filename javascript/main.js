@@ -23,14 +23,13 @@ main(){
 	
 	function playScene(sceneObject){
 		this.scene = sceneObject;
-		for(int i = 0; i < scene.lines.length; i++){
+		for(int i = 0; i < scene.lines.length; i++){ //This will actually be a callback loop, the for loop is only temporary.
 			if(scene.lines[i].getBGIMG() !== ''){ display.displayImage(scene.lines[i].getBGIMG(), 'background'); }
 			if(scene.lines[i].getleftimg() !== ''){ display.displayImage(scene.lines[i].getLeftIMG(), 'left'); }
 			if(scene.lines[i].getrightimg() !== ''){ display.displayImage(scene.lines[i].getRightIMG(), 'right'); }
 			if(scene.lines[i].getaudio() !== ''){ display.displayAudio(scene.lines[i].getAudio()); }
 			display.displayText(scene.lines[i].getSpeakerName(), scene.lines[i].getSceneText()
 		}	
-					    
 		return display.displayDecision(scene.decision1(), scene.decision2());
 	}
 	
