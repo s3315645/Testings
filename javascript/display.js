@@ -2,6 +2,7 @@ function displayText(speakerName, textContent) {
     this.speakerName = speakerName;
     this.textContent = textContent;
     
+    /*Should we do CSS for this type of formatting?*/
     this.color = "#000000";
     this.position = new Position(0, 0, true);
     this.align = "left";
@@ -12,6 +13,7 @@ function displayText(speakerName, textContent) {
     var i = 0;
     var speed = 60;
     
+    /*Need the p id name and replace "getText" with that nane*/
     if (i < txtContent.length) {
         document.getElementById("getText").innerHTML += txtContent.charAt(i);
         i++;
