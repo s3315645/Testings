@@ -15,7 +15,7 @@ function displayText(speakerName, textContent) {
 
     /*Need the p id name and replace "getText" with that nane*/
     if (i < txtContent.length) {
-        document.getElementById("getText").innerHTML += txtContent.charAt(i);
+        document.getElementById("textBox").innerHTML += txtContent.charAt(i);
         i++;
         setTimeout(displayText, speed);
   }
