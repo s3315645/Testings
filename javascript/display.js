@@ -22,7 +22,6 @@ function displayText(speakerName, textContent) {
 }
 
 
-
 function displayImage(imageName, imageSetting) {
     this.imageName = imageName;
     this.imageSetting = imageSetting;
@@ -59,6 +58,23 @@ function displayAudio(audioName) {
 function displayDecision(button1, button2) {
     this.button1 = button1;
     this.button2 = button2;
-
-
 }
+
+const debug = true;
+
+	if(debug){
+		document.getElementById('textBox').innerHTML =  "Debug testing";
+		document.getElementById('textBox').innerHTML = "Testing background";
+		displayImage('debug\debugBG.jpg', 'background');
+		document.getElementById('textBox').innerHTML = "Testing Right Sprite";
+		displayImage('debug\debugLS.png', 'right');
+		document.getElementById('textBox').innerHTML = "Testing Left Sprite";
+		displayImage('debug\debugRS.png', 'left');
+		document.getElementById('textBox').innerHTML = "Testing Audio";
+		displayAudio('debug\debug.mp3');
+		document.getElementById('textBox').innerHTML = "Testing Text";
+		displayText('Debug', 'displayText is working!');
+		document.getElementById('textBox').innerHTML = "Testing decision";
+		//displayDecision();
+		document.getElementById('textBox').innerHTML = "Testing Finished";
+	}
