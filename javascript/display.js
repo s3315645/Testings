@@ -1,4 +1,4 @@
-this 'function displayText(speakerName, textContent) {
+function displayText(speakerName, textContent) {
     this.speakerName = speakerName;
     this.textContent = textContent;
     
@@ -18,11 +18,17 @@ function displayImage(imageName, imageSetting) {
     this.imageSRC = ""; /*directory where the image is located*/
     
     switch (imageSetting) {
+            
         case 'background':
             this.alpha = 1.0; /*display as Opaque*/
             break;
-        case 'foreground':
-            this.alpha = .07;
+            
+        case 'left':
+            this.style = "position:left";
+            break;
+            
+        case 'right':
+            this.style = "position:right";
             break;
         default:
     }
