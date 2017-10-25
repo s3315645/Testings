@@ -35,7 +35,8 @@
 			display.displayText(scene.lines[i].getSpeakerName(), scene.lines[i].getSceneText()
 			document.getElementById("catchclick").addEventListener("click", i++);
 		}	
-		return display.displayDecision(scene.decision1(), scene.decision2());
+		if(scene.required_clue === ''){	return display.displayDecision(scene.path1(), scene.path2());}
+		else(return display.displayDecision(scene.altPath1(), scene.altPath2());
 	}
 	
 	//the actual novel starts playing from here
