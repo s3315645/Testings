@@ -1,1 +1,30 @@
-
+"lines": [
+		    {
+            "speaker_name": "Walter",
+            "dialogue": "You! Who are you? And what have you done with the detective?",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Ah,.. Walter. So kind of you to join me. I had almost given up hope, the hour is certainly late.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Roger! Are you alright? What are you -*Roger interrupts*",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Now, I suppose you’re wondering how I come to be standing here; free and obviously not kidnapped.",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Simply put, this has all been a test: a modest game if you will, to see if you are indeed worthy of my tutelage.",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Walter, you have proven yourself to be a most useful asset. Congratulations are due on your timely completion of this; my little puzzle.",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Now be a dear and get me a piping hot cup of earl grey. Oh, and ignore the caged beast in the corner.",
+        },
+      ]
