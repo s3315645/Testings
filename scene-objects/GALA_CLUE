@@ -1,0 +1,66 @@
+"lines": [
+		    {
+            "speaker_name": "MC",
+            "dialogue": "Good evening sir, welcome to our illustrious event. I trust you are well this evening?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Uh, well..."
+        },
+		    {
+            "speaker_name": "MC",
+            "dialogue": "Is there something I can help you with sir?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "*to himself* What am I supposed to be doing here? What clues do I have?"
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "Sir?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "*to himself* Mr Catumiri sure did carry on about his hatred of Turret spiders.Hmmm, I’m in a castle….and castles sometimes have turrets...I wonder if this castle has any turrets?"
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "Are you quite alright sir?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Aha, yes, fine my good man! say they’ve done a fine job with the castle restoration, a fine job indeed!"
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "Yes, an incredible transformation, I must say.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "I hear the turrets are particularly impressive."
+        }, 
+        {
+            "speaker_name": "MC",
+            "dialogue": "The turrets?! Well now, that is a very specific thing to mention sir.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Yes, it is, isn’t it?"
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "A very specific thing indeed.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Indeed."
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "I think you’d best follow me sir.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Walter: Lead the way."
+        },
+        
