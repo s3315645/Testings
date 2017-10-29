@@ -1,0 +1,42 @@
+"lines": [
+		    {
+            "speaker_name": "MC",
+            "dialogue": "Good evening sir, welcome to our illustrious event. I trust you are well this evening?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Uh, well..."
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "Is there something I can help you with sir?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "I don’t think so, thank you.."
+        },
+        {
+            "speaker_name": "MC",
+            "dialogue": "Very well sir, enjoy your evening and let me know if I can be of assistance.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Thank you."
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Wow, fancy party! But it just looks like a lot of very wealthy and very inebriated people.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "I don’t really have a lead here, nothing really looks out of place."
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "There are no shady characters, strange packages or spiders…"
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Hmmm, speaking of spiders, there was another spider with the gala invitation. Maybe I should pay Mr Catumiri a second visit..."
+        },
+      ]
