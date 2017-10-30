@@ -1,0 +1,26 @@
+"lines": [
+		    {
+            "speaker_name": "Walter",
+            "dialogue": "You! Who are you? And what have you done with the detective?",
+        },
+        {
+            "speaker_name": "Sinister Voicer",
+            "dialogue": "Ah, Walter. Just as I predicted; you are too late.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Wait, Detective Roger?",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "Relax Walter; the crossbow is merely for deploying the anaesthetic, which should be taking effect right about..",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "*thinks* ‘what a strange place to have put a bathtub’",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "“Dear Walter. It is my great displeasure to inform you that I no longer require your services as an apprentice. Apparently your brain is so pathetic you couldn’t even figure out this little game of mine. But while your brain is of no use to me; your kidneys are. I’ll be along shortly to patch you up, I’ll just be sedating the baboon. Do not try to get up.”",
+        },
+    ]
