@@ -22,45 +22,39 @@
 	padding-right: 80px;
 }
 
-#textContent {
-	text-align: center;
-	top: 500px;
-	right: 0;
-	position: absolute;
-	width: 50%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
+h2 {
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 50px;
 	font-weight: bold;
 
 }
 
-#button1{
-	text-align: center;
-	top: 500px;
-	position: absolute;
-	width: 30%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
+#speaker {
+	text-align: left;
+	font-size: 30px;
 	font-weight: bold;
-
 }
 
-#button2{
-	text-align: center;
-	top: 500px;
-	right: 0;
-	position: absolute;
-	width: 30%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
-	font-weight: bold;
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
+.button1{
+	background-color: #555555; /* Black */;
+}
+
+.button2{
+	background-color: #555555; /* Black */;
 }
 
 #timer {
@@ -73,5 +67,7 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+}
+
 
 }

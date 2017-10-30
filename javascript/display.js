@@ -1,22 +1,14 @@
-function displayText(speakerName, textContent) {
-    this.speakerName = speakerName;
+function displayText(textContent) {
     this.textContent = textContent;
-
-    /*Should we do CSS for this type of formatting?*/
-    this.color = "#000000";
-    this.position = new Position(0, 0, true);
-    this.align = "left";
-    this.font = '20px "Deja Vu Sans", Helvetica, Arial, sans-serif';
-    this.width = 1.0; // decimal percentage
-    this.visibility = "visible";
 
     var i = 0;
     var speed = 60;
 
     /*Need the p id name and replace "getText" with that nane*/
-    if (i < txtContent.length) {
-        document.getElementById("textBox").innerHTML += txtContent.charAt(i);
+    if (i < textContent.length) {
+        document.getElementById("dialogue").innerHTML += textContent.charAt(i);
         i++;
+
         setTimeout(displayText, speed);
   }
 }
@@ -49,19 +41,15 @@ function displayImage(imageName, imageSetting) {
 
 function displayAudio(audioName) {
     this.audioName = audioName;
-    this.audioSRC = "";
 }
 
+function displayDecision() {
 
-function displayDecision(button1, button2) {
-  document.getElementbyId("button1").innerHTML = "button1";
-  document.getElementbyId("button2").innerHTML = "button2";
 }
 
 const debug = true;
 
 	if(debug){
 		document.getElementById('speaker').innerHTML = "Walter:";
-    		document.getElementById('dialogue').innerHTML = "I have a feeling today's going to be a great day.";
-
+    displayText("I have a feeling today's going to be a great day.");
 	}
