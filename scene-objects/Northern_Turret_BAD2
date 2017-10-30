@@ -1,0 +1,38 @@
+"lines": [
+		    {
+            "speaker_name": "Constable",
+            "dialogue": "Hold up now there Walter, best let me provide you with some backup. Whoever you’ve tracked to this door is not to be trusted; I’ll watch your back.",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Thank you constable, much appreciated",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "You! Who are you? And what have you done with the detective?",
+        },
+        {
+            "speaker_name": "Sinister Voice",
+            "dialogue": "Ah, Walter. Just as I predicted; you are too late.",
+        },
+        {
+            "speaker_name": "Sinister Voice",
+            "dialogue": "Sinister Voice: What in blazes!?",
+        },
+        {
+            "speaker_name": "Walter",
+            "dialogue": "Detective Roger? How? Why do you have a crossbow?",
+        },
+        {
+            "speaker_name": "Detective Roger",
+            "dialogue": "You fool! You brought the police?! I specifically told you not to have them involved? You imbecile!",
+        },
+        {
+            "speaker_name": "Constable",
+            "dialogue": "Hold there Mr Roger. It seems you have just committed a crime. ",
+        },
+        {
+            "speaker_name": "Constable",
+            "dialogue": "Mr Roger, I am arresting you for assault on a police officer with a deadly weapon, and for wasting police time by faking your own kidnapping. You will come along quietly and orderly like a good gentleman. Mr Walter, I expect you will accompany us to the station and make a full report. Come along now both of you.",
+        },
+]
