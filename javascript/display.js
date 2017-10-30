@@ -14,6 +14,7 @@ function displayImage(imageName, imageSetting) {
 
         case 'background':
             this.alpha = 0.7; /*display as Opaque*/
+            
             break;
 
         case 'left':
@@ -42,6 +43,6 @@ function displayDecision() {
 const debug = true;
 
 	if(debug){
-		document.getElementById('speaker').innerHTML = "Walter:";
+		displayText('speaker', "Walter:");
     displayText('dialogue',"I have a feeling today's going to be a great day.");
 	}
