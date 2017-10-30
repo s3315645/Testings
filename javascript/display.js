@@ -1,16 +1,8 @@
-function displayText(textContent) {
+function displayText(divID, textContent) {
+    this.divID = divID;
     this.textContent = textContent;
 
-    var i = 0;
-    var speed = 60;
-
-    /*Need the p id name and replace "getText" with that nane*/
-    if (i < textContent.length) {
-        document.getElementById("dialogue").innerHTML += textContent.charAt(i);
-        i++;
-
-        setTimeout(displayText, speed);
-  }
+    document.getElementById(divID).innerHTML = textContent;
 }
 
 
@@ -51,5 +43,5 @@ const debug = true;
 
 	if(debug){
 		document.getElementById('speaker').innerHTML = "Walter:";
-    displayText("I have a feeling today's going to be a great day.");
+    displayText('dialogue',"I have a feeling today's going to be a great day.");
 	}
