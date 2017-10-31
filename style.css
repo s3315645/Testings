@@ -1,15 +1,15 @@
 #img-background {
 	background-image: url("images/Office.jpg");
-	width: 1270px;
-	height: 570px;
 	position: relative;
 	background-position: center;
+	width: 1250px;
+	height: 570px;
 }
 
 #img-sprite1 img {
 	width: 150px;
 	height: 600px;
-	top: 150px;
+	top: 30px;
 	position: absolute;
 	padding-left: 80px;
 }
@@ -27,6 +27,7 @@ h2 {
 	font-family: Comic Sans MS;
 	font-size: 50px;
 	font-weight: bold;
+	text-align:center;
 
 }
 
@@ -52,7 +53,7 @@ h2 {
 }
 
 #timer {
-	border: 2px solid black;
+	border:;
 	top: 50px;
 	right: 0;
 	width: 18%;
