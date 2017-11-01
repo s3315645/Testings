@@ -14,7 +14,7 @@ function displayImage(imageName, imageSetting) {
 
         case 'background':
             this.alpha = 0.7; /*display as Opaque*/
-            
+
             break;
 
         case 'left':
@@ -42,7 +42,20 @@ function displayDecision() {
 
 const debug = true;
 
-	if(debug){
-		displayText('speaker', "Walter:");
-    displayText('dialogue',"I have a feeling today's going to be a great day.");
-	}
+if(debug){
+	displayText('speaker', "Walter:");
+  displayText('dialogue',"I have a feeling today's going to be a great day.");
+}
+
+// this function takes two strings and changes the labels on the option buttons
+// to match those strings. Also displays the buttons (makes them visible)
+function displayOptions(firstOption, secondOption) {
+    document.getElementById("button1").innerHTML = firstOption;
+    document.getElementById("button2").innerHTML = secondOption;
+    document.getElementById("options").style.display = 'inline';
+}
+
+// hides the option buttons
+function hideOptions() {
+  document.getElementById("options").style.display = 'none';
+}

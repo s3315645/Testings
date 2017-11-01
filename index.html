@@ -21,12 +21,21 @@
 			<div id="dialogue"></div> <!-- Dialogue line -->
 			<div id="next"></div>
 			<div id=options>
+				<!-- option buttons - currently call a function to display a message when they are clicked -->
+				<button id="button1" class="decision-button" onclick="optionButtonClicked()">Option 1</button>
+				<button id="button2" class="decision-button" onclick="optionButtonClicked()">Option 2</button>
 			</div>
 		</div>
+
+		<!-- Button to toggle decision buttons on and off -->
+		<button id="toggle" onclick="toggleButtons()">Show Options</button>
+		<!-- temporary test message to confirm an option button has been pressed -->
+		<p id="testMessage"></p>
 
 		<div id ="timer"></div>
 		<script src="javascript/main.js"></script>
 		<script src="javascript/display.js"></script>
 		<script src="javascript/test.js"></script>
+
 	</body>
 </html>
