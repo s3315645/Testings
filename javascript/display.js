@@ -36,10 +36,6 @@ function displayAudio(audioName) {
     this.audioName = audioName;
 }
 
-function displayDecision() {
-
-}
-
 const debug = true;
 
 if(debug){
