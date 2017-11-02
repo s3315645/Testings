@@ -24,5 +24,5 @@ let sinkBoxObject = {
             "dialogue": "Picking up the film reel, Walter can see that the dye from the box has seeped into the film while he held it under water, clearly damaging it."
         }
     ],
-    "automatic-transition": "parkAfterBox.js
+    "automatic-transition": "parkAfterBox.js";
 }

@@ -37,5 +37,5 @@ let openBoxObject = {
             "dialogue": "A spider?! That's odd. We had a case involving spiders not that long ago..."
         }
     ],
-    "automatic-transition": "parkAfterBox.js
+    "automatic-transition": "parkAfterBox.js";
 }
