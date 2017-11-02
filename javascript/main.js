@@ -1,25 +1,25 @@
    
-	const novel = require('novel.js');
-	const display = require('display.js');
-	/*const timer = require('timer.js');
-	const saveGame = require('savegame.js');*/
+	const novel = require('./novel.js');
+	const display = require('./display.js');
+	/*const timer = require('./timer.js');
+	const saveGame = require('./savegame.js');*/
 	
-	function clue(clueName){
+	/*function clue(clueName){
 		this.clueName = clueName;
 		var clueFound = false;
-	}
+	}*/
 	
 	//var clues[] = new clue{'notepad'; 'clue2'; 'clue3'; 'clue4'};
 	
 	var currentScene = novel.getScene(/*'office key'*/);
 	
-	function intro(){
+	/*function intro(){
 	
 	display.displayImage('title.jpg', 'background');
 	display.displayAudio('theme.mp3');
 	display.displayText('','Click anywhere to begin');
 		
-	}
+	}*/
 	
 	
 	function playScene(sceneObject){
