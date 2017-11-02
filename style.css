@@ -27,30 +27,14 @@ h2 {
 	font-family: Comic Sans MS;
 	font-size: 50px;
 	font-weight: bold;
-	text-align:center;
+	text-align:left;
 
 }
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.button1{
-	background-color: #555555; /* Black */;
-}
-
-.button2{
-	background-color: #555555; /* Black */;
-}
+#textButtonContainer {
+ background: #F8ECC2;
+ width: 1250px;
+ }
 
 #timer {
 	border:;
@@ -118,8 +102,21 @@ h2 {
 }
 
 #options{
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom: 5px;
 	text-align: center;
 	display:none;
+}
+
+#button1, #button2 {
+    background-color: #555555; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
