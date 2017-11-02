@@ -1,38 +1,20 @@
-function displayText(speakerName, textContent) {
-    this.speakerName = speakerName;
+function displayText(divID, textContent) {
+    this.divID = divID;
     this.textContent = textContent;
 
-    /*Should we do CSS for this type of formatting?*/
-    this.color = "#000000";
-    this.position = new Position(0, 0, true);
-    this.align = "left";
-    this.font = '20px "Deja Vu Sans", Helvetica, Arial, sans-serif';
-    this.width = 1.0; // decimal percentage
-    this.visibility = "visible";
-
-    var i = 0;
-    var speed = 60;
-
-    /*Need the p id name and replace "getText" with that nane*/
-    if (i < txtContent.length) {
-        document.getElementById("getText").innerHTML += txtContent.charAt(i);
-        i++;
-        setTimeout(displayText, speed);
-  }
+    document.getElementById(divID).innerHTML = textContent;
 }
-
 
 
 function displayImage(imageName, imageSetting) {
     this.imageName = imageName;
     this.imageSetting = imageSetting;
 
-    this.imageSRC = ""; /*directory where the image is located*/
-
     switch (imageSetting) {
 
         case 'background':
             this.alpha = 0.7; /*display as Opaque*/
+
             break;
 
         case 'left':
@@ -52,13 +34,24 @@ function displayImage(imageName, imageSetting) {
 
 function displayAudio(audioName) {
     this.audioName = audioName;
-    this.audioSRC = "";
 }
 
+const debug = true;
 
-function displayDecision(button1, button2) {
-    this.button1 = button1;
-    this.button2 = button2;
+if(debug){
+	displayText('speaker', "Walter:");
+  displayText('dialogue',"I have a feeling today's going to be a great day.");
+}
 
+// this function takes two strings and changes the labels on the option buttons
+// to match those strings. Also displays the buttons (makes them visible)
+function displayOptions(firstOption, secondOption) {
+    document.getElementById("button1").innerHTML = firstOption;
+    document.getElementById("button2").innerHTML = secondOption;
+    document.getElementById("options").style.display = 'inline';
+}
 
+// hides the option buttons
+function hideOptions() {
+  document.getElementById("options").style.display = 'none';
 }
