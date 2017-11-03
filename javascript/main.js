@@ -9,21 +9,13 @@
 	var display = require('.display.js');
 	if(debug){document.getElementById("debug").innerHTML = "loading novel.js";}
 	var novel = require('novel.js');
-	/*
+	/* //TODO - Not yet built modules
 	if(debug){document.getElementById("debug").innerHTML = "lodaing timer.js";}
 	var timer = require('./timer.js');
 	if(debug){document.getElementById("debug").innerHTML = "loading savegame.js";}
 	var saveGame = require('./savegame.js');
-	
-	
-	function clue(clueName){
-		this.clueName = clueName;
-		var clueFound = false;
-	}
 	*/	
-	
-	var currentScene = novel.getScene('title.js'); //first scene key
-	
+		
 	function playScene(sceneObject){
 		this.scene = sceneObject;
 		
@@ -37,6 +29,7 @@
 			if(scene.lines[i].getrightimg() !== ''){ display.displayImage(scene.lines[i].getRightIMG(), 'right'); }
 			if(scene.lines[i].getaudio() !== ''){ display.displayAudio(scene.lines[i].getAudio()); }
 			display.displayText(scene.lines[i].getSpeakerName(), scene.lines[i].getSceneText()
+			
 			document.getElementById("catchclick").addEventListener("click", i++);
 		}
 
@@ -45,18 +38,24 @@
 			if(scene.path2 === ''){ //check for automatic transition
 				return scene.path1; // if automatic transition, return only path1
 			} else {
-				return display.displayDecision(scene.path1, scene.path2); //
+				return display.displayDecision(scene.path1, scene.path2); // display decision options
 			}
 		} else{
-			return display.displayDecision(scene.altPath1, scene.altPath2);
+			if(scene.altPath2 === ''{ // check for automatic transition for alternate paths
+			   return scene.altPath1;
+			} else { 
+			   return display.displayDecision(scene.altPath1, scene.altPath2); // display alternate decision options
+			}
 		}
 	}
 	
-	//the actual novel starts playing from here
+	//The actual novel starts playing from here
 	
+	var currentScene = novel.getScene('title.js'); //first scene
+
 	do{
 		currentScene = playScene(currentScene); //calls playScene, updates currentScene as it plays through the loop
-		//if (!timer.isrunning){timer.start()};
+		//if (!timer.isrunning){timer.start()}; //assuming we run with the title as a 'scene'
 		//Automatic Savegame? 
 	
 	}while(!quit)
