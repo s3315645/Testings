@@ -1,7 +1,7 @@
-let office1object = {
+let office1Object = {
     "scene_name": "office1",
     "clue_found": "false",
-    "visited": "false",
+    "visited": false,
     "lines": [{
             "speaker_name": "Walter",
             "dialogue": "Oh no, oh no, oh no! Late again. Detective Roger's going to kill me!",
@@ -120,23 +120,16 @@ let office1object = {
             "dialogue": "Now, should I head to the Basement or the Park?"
         }
     ],
-    "option_1_clue_required": "ink",
-    "option_2_clue_required": "leaves",
-    "option_1_clue": {
-      "title": "Go to Basement",
-      "path": "basement.js"
-    },
-    // 'No clue' options are n/a in office1 scene, but included here to ensure they're in the template
-    // "option_1_no_clue": {
-    //   "title": "Go to Basement",
-    //   "path": "basement.js"
-    // },
-    "option_2_clue": {
-      "title": "Go to Park",
-      "path": "park.js"
-    },
-    // "option_2_no_clue": {
-    //   "title": "Go to Park",
-    //   "path": "park.js"
-    // }
+    "path1": "",
+    "path2": "",
+    "path1Object": "",
+    "path2Object": "",
+    generateOptions: function() {
+      // logic to determine possible paths based on whether scenes have been "visited"
+      // for the first scene though, there's only two options, so:
+      this.path1 = "Go to Basement";
+      this.path1Object = basementObject;
+      this.path2 = "Go to Park";
+      this.path2Object = parkObject;
+    }
 }

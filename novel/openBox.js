@@ -1,7 +1,7 @@
 let openBoxObject = {
     "scene_name": "openBox",
     "clue_found": "false",
-    "visited": "false",
+    "visited": false,
     "lines": [{
             "speaker_name": "Narrator",
             "dialogue": "Walter gently places the present onto the corner of the bench, and begins to remove the yellow ribbon."
@@ -37,5 +37,12 @@ let openBoxObject = {
             "dialogue": "A spider?! That's odd. We had a case involving spiders not that long ago..."
         }
     ],
-    "automatic-transition": "parkAfterBox.js";
+    "path1": "",
+    "path2": "",
+    "path1Object": "",
+    "path2Object": "",
+    generateOptions: function() {
+      // Automatic transition
+      this.path1Object = parkAfterBoxObject;
+    }
 }

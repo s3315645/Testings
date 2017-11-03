@@ -1,7 +1,7 @@
 let sinkBoxObject = {
     "scene_name": "sinkBox",
     "clue_found": "false",
-    "visited": "false",
+    "visited": false,
     "lines": [{
             "speaker_name": "Narrator",
             "dialogue": "Walter, realising the dangers of the situation, decides that safety is more important than the integrity of whatever clue might be inside the box."
@@ -24,5 +24,10 @@ let sinkBoxObject = {
             "dialogue": "Picking up the film reel, Walter can see that the dye from the box has seeped into the film while he held it under water, clearly damaging it."
         }
     ],
-    "automatic-transition": "parkAfterBox.js";
+    "path1Object": "",
+    "path2Object": "",
+    generateOptions: function() {
+      // Automatic transition
+      this.path1Object = parkAfterBoxObject;
+    }
 }

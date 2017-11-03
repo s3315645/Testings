@@ -1,7 +1,7 @@
 let parkAfterBoxObject = {
     "scene_name": "parkAfterBox",
     "clue_found": "false",
-    "visited": "false",
+    "visited": false,
     "lines": [{
             "speaker_name": "Narrator",
             "dialogue": "An authoritative voice sounds from behind Walter.",
@@ -27,14 +27,15 @@ let parkAfterBoxObject = {
             "dialogue": "He’s not around here now is he? I can’t say if’n I like that arrogant knowitall."
         }
     ],
-    "option_1_clue_required": "box",
-    "option_2_clue_required": "box",
-    "option_1_clue": {
-      "title": "Tell the Truth",
-      "path": "tellTruth.js"
-    },
-    "option_2_clue": {
-      "title": "Dismiss the Buffoon",
-      "path": "dismissBuffoon.js"
+    "path1": "",
+    "path2": "",
+    "path1Object": "",
+    "path2Object": "",
+    generateOptions: function() {
+      // Only two options here
+      this.path1 = "Tell the Truth";
+      this.path1Object = tellTruthObject;
+      this.path2 = "Dismiss the Buffoon";
+      this.path2Object = dismissBuffoonObject;
     }
 }

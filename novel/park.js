@@ -1,7 +1,7 @@
 let parkObject = {
     "scene_name": "park",
     "clue_found": "false",
-    "visited": "false",
+    "visited": false,
     "lines": [{
             "speaker_name": "Narrator",
             "dialogue": "Walter briskly steps through the iron archway that marks the entrance to the baker street park.",
@@ -16,7 +16,7 @@ let parkObject = {
         {
             "speaker_name": "Narrator",
             "dialogue": "A small girl is sitting on a bench before the fountain; she is holding a bright red box tied with a yellow ribbon, nobody else is in sight."
-            
+
         },
         {
             "speaker_name": "Walter",
@@ -67,25 +67,26 @@ let parkObject = {
         },
         {
             "speaker_name": "Narrator",
-            "dialogue": "Walter thinks it over: He could just open the box, but the hissing could be something dangerous." 
+            "dialogue": "Walter thinks it over: He could just open the box, but the hissing could be something dangerous."
         },
         {
             "speaker_name": "Narrator",
-            "dialogue": "Looking around, he sees only one place nearby to safely ‘defuse’ whatever could be inside." 
+            "dialogue": "Looking around, he sees only one place nearby to safely ‘defuse’ whatever could be inside."
         },
         {
             "speaker_name": "Narrator",
             "dialogue": "What will Walter do next?"
         }
     ],
-    "option_1_clue_required": "box",
-    "option_2_clue_required": "box",
-    "option_1_clue": {
-      "title": "Open the Box",
-      "path": "openBox.js"
-    },
-    "option_2_clue": {
-      "title": "Sink Box in the Fountain",
-      "path": "sinkBox.js"
+    "path1": "",
+    "path2": "",
+    "path1Object": "",
+    "path2Object": "",
+    generateOptions: function() {
+      // Only two options here
+      this.path1 = "Open the Box";
+      this.path1Object = openBoxObject;
+      this.path2 = "Defuse the Box";
+      this.path2Object = sinkBoxObject;
     }
 }
