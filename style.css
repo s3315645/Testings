@@ -1,15 +1,15 @@
 #img-background {
-	background-image: url("Office.jpg");
-	width: 1270px;
-	height: 570px;
+	background-image: url("images/Office.jpg");
 	position: relative;
 	background-position: center;
+	width: 1250px;
+	height: 570px;
 }
 
 #img-sprite1 img {
 	width: 150px;
 	height: 600px;
-	top: 150px;
+	top: 30px;
 	position: absolute;
 	padding-left: 80px;
 }
@@ -22,49 +22,22 @@
 	padding-right: 80px;
 }
 
-#textContent {
-	text-align: center;
-	top: 500px;
-	right: 0;
-	position: absolute;
-	width: 50%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
+h2 {
+	text-align: justify;
+	font-family: Comic Sans MS;
+	font-size: 50px;
 	font-weight: bold;
+	text-align:left;
 
 }
 
-#button1{
-	text-align: center;
-	top: 500px;
-	position: absolute;
-	width: 30%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-
-}
-
-#button2{
-	text-align: center;
-	top: 500px;
-	right: 0;
-	position: absolute;
-	width: 30%;
-	background-color: #C0C0C0;
-	border: 2px solid black;
-	font-family: sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-
-}
+#textButtonContainer {
+ background: #F8ECC2;
+ width: 1250px;
+ }
 
 #timer {
-	border: 2px solid black;
+	border:;
 	top: 50px;
 	right: 0;
 	width: 18%;
@@ -73,5 +46,77 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+}
 
+/*source: https://codepen.io/rusjames/pen/uAFhE*/
+#speaker {
+  color: black;
+  font-family: "Courier New";
+  font-size: 25px;
+	font-weight: bold;
+	padding-top: 30px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 5s steps(30, end);
+}
+
+#speaker:nth-child(2){
+  animation: type2 5s steps(60, end);
+}
+
+#dialogue {
+  color: grey;
+  font-family: "Courier New";
+  font-size: 25px;
+	font-weight: bold;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 5s steps(30, end);
+}
+
+#dialogue:nth-child(2){
+  animation: type2 5s steps(60, end);
+}
+
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+#options{
+	margin-top: 60px;
+	margin-bottom: 5px;
+	text-align: center;
+	display:none;
+}
+
+#button1, #button2 {
+    background-color: #555555; /* Black */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
