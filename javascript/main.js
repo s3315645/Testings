@@ -1,6 +1,6 @@
 	//global variable declaration
 
-	const debug = true;
+	const debug = false;
 	var quit = false;
 
 	
