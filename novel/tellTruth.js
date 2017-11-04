@@ -48,27 +48,14 @@ let tellTruthObject = {
             "dialogue": "Should he return to the office? Or should he go to the local cinema to view the footage on the film reel?"
         }
     ],
-    // possible avenues from here are basement, office two or cinema
-    // if basement has not been visited, display options 2 and 3
-    // if basement has been visited, display options 1 and 2
-    // possible avenues from here are basement, office two or cinema
-    check_visited: function(){
-      return basementObject.visited;
-    },
     "path1": "",
     "path2": "",
     "path1Object": "",
     "path2Object": "",
+    // options are office2 and cinema
     generateOptions: function() {
-      // if basement has been visited, show office2 option
-      if(this.check_visited()) {
-        this.path1 = "Go to Office for Spider Case info";
-        this.path1Object = office2Object;
-      } else {
-        // show basement option
-        this.path1 = "Go to Basement";
-        this.path1Object = basementObject;
-      }
+      this.path1 = "Go to Office for Spider Case info";
+      this.path1Object = office2Object;
       this.path2 = "Go to Cinema to watch film";
       this.path2Object = cinemaObject;
     }

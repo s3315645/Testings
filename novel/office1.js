@@ -117,19 +117,13 @@ let office1Object = {
         },
         {
             "speaker_name": "Walter",
-            "dialogue": "Now, should I head to the Basement or the Park?"
+            "dialogue": "I should probably head down to the basement first, while I'm here."
         }
     ],
-    "path1": "",
-    "path2": "",
     "path1Object": "",
     "path2Object": "",
     generateOptions: function() {
-      // logic to determine possible paths based on whether scenes have been "visited"
-      // for the first scene though, there's only two options, so:
-      this.path1 = "Go to Basement";
+      // Automatic transition
       this.path1Object = basementObject;
-      this.path2 = "Go to Park";
-      this.path2Object = parkObject;
     }
 }
