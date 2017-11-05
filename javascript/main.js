@@ -1,6 +1,6 @@
 	//global variable declaration
 
-	const debug = false;
+	const debug = true;
 	var quit = false;
 
 	
@@ -9,53 +9,62 @@
 	var display = require('.display.js');
 	if(debug){document.getElementById("debug").innerHTML = "loading novel.js";}
 	var novel = require('novel.js');
-	/* //TODO - Not yet built modules
+	/*
 	if(debug){document.getElementById("debug").innerHTML = "lodaing timer.js";}
 	var timer = require('./timer.js');
 	if(debug){document.getElementById("debug").innerHTML = "loading savegame.js";}
 	var saveGame = require('./savegame.js');
+	
+	
+	function clue(clueName){
+		this.clueName = clueName;
+		var clueFound = false;
+	}
 	*/	
-		
+	
+	var currentScene = novel.getScene('office1.js'); //first scene key
+	
 	function playScene(sceneObject){
 		this.scene = sceneObject;
 		
-		let i = 0;
 
-		//Scene Line loop
 		
+		function displayLine(i){
+		if(scene.lines[i].getBGIMG() !== ''){ display.displayImage(scene.lines[i].getBGIMG(), 'background'); }
+		if(scene.lines[i].getleftimg() !== ''){ display.displayImage(scene.lines[i].getLeftIMG(), 'left'); }
+		if(scene.lines[i].getrightimg() !== ''){ display.displayImage(scene.lines[i].getRightIMG(), 'right'); }
+		if(scene.lines[i].getaudio() !== ''){ display.displayAudio(scene.lines[i].getAudio()); }
+		display.displayText(scene.lines[i].getSpeakerName(), scene.lines[i].getSceneText()
+		}
+		
+		//Scene Line loop
+
+		let i = 0;
+				    
 		while(i < scene.lines.length()){ 
-			if(scene.lines[i].getBGIMG() !== ''){ display.displayImage(scene.lines[i].getBGIMG(), 'background'); }
-			if(scene.lines[i].getleftimg() !== ''){ display.displayImage(scene.lines[i].getLeftIMG(), 'left'); }
-			if(scene.lines[i].getrightimg() !== ''){ display.displayImage(scene.lines[i].getRightIMG(), 'right'); }
-			if(scene.lines[i].getaudio() !== ''){ display.displayAudio(scene.lines[i].getAudio()); }
-			display.displayText(scene.lines[i].getSpeakerName(), scene.lines[i].getSceneText()
-			
-			document.getElementById("catchclick").addEventListener("click", i++);
+			document.getElementById("next").addEventListener("click", displayLine(i);
+			i++;
 		}
 
 			// Scene Transition
-		if(scene.required_clue === ''){ //check for required clue
+			scene.generateOptions()
 			if(scene.path2 === ''){ //check for automatic transition
-				return scene.path1; // if automatic transition, return only path1
+				return scene.path1Object; // if automatic transition, return only path1
+				
 			} else {
-				return display.displayDecision(scene.path1, scene.path2); // display decision options
-			}
-		} else{
-			if(scene.altPath2 === ''{ // check for automatic transition for alternate paths
-			   return scene.altPath1;
-			} else { 
-			   return display.displayDecision(scene.altPath1, scene.altPath2); // display alternate decision options
-			}
-		}
+				if (display.displayDecision(scene.path1, scene.path2) === scene.path1){ //Determination of scene transition target
+					return scene.path1Object;
+				} else {
+					return scene.path2Object;
+				}
 	}
 	
-	//The actual novel starts playing from here
+	//the actual novel starts playing from here
 	
-	var currentScene = novel.getScene('title.js'); //first scene
-
 	do{
+		//TODO intro() 
 		currentScene = playScene(currentScene); //calls playScene, updates currentScene as it plays through the loop
-		//if (!timer.isrunning){timer.start()}; //assuming we run with the title as a 'scene'
+		//if (!timer.isrunning){timer.start()};
 		//Automatic Savegame? 
 	
 	}while(!quit)
